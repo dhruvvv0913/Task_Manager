@@ -4,8 +4,6 @@ A simple Task Manager web application that helps users manage their daily tasks.
 You can add new tasks, mark them as completed, and delete them. The task list
 updates instantly using JavaScript, without reloading the page.
 
-This is Minor Project 2 of the InternsElite Full Stack Web Development & MERN Stack
-training program.
 
 ## Features
 
@@ -28,6 +26,14 @@ training program.
 - `script.js` - the functionality
 
 ## Steps to Run
+
+You can use the live version, or run it on your own computer.
+
+### Option 1: Open the live site
+
+Just visit: https://task-manager-dhruvvv9146.vercel.app
+
+### Option 2: Run it locally
 
 1. Download or clone this repository.
 2. Open the project folder.
