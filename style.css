@@ -1,0 +1,120 @@
+/* Basic reset so spacing looks the same in all browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* The white box in the middle of the page */
+.container {
+  background-color: #ffffff;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+/* The input box and the Add button row */
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#addButton {
+  padding: 10px 16px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#addButton:hover {
+  background-color: #45a049;
+}
+
+/* The task list */
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafa;
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+li span {
+  flex: 1;
+  word-break: break-word;
+}
+
+/* How a completed task looks */
+li.completed span {
+  text-decoration: line-through;
+  color: #999999;
+}
+
+/* The Done and Delete buttons inside a task */
+li button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+.done-btn {
+  background-color: #2196f3;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
+
+/* Make it look good on small phone screens */
+@media (max-width: 400px) {
+  .input-area {
+    flex-direction: column;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}
