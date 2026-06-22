@@ -7,10 +7,16 @@ updates instantly using JavaScript, without reloading the page.
 
 ## Features
 
-- Add new tasks
+- Add new tasks (click "Add" or press Enter)
 - Display the list of tasks
-- Mark a task as completed (click "Done")
+- Mark a task as completed (tick the checkbox)
+- Edit a task (click "Edit")
 - Delete a task (click "Delete")
+- Clear all completed tasks at once
+- Filter tasks: All / Active / Completed
+- Dark / light mode toggle (your choice is remembered)
+- Task counter showing how many tasks are completed
+- Tasks are saved in the browser, so they stay after refresh
 - Clean and responsive design that works on mobile and desktop
 
 ## Technologies Used

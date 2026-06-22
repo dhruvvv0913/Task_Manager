@@ -8,14 +8,37 @@
 </head>
 <body>
   <div class="container">
-    <h1>Task Manager</h1>
+    <!-- Title on the left, dark/light toggle on the right -->
+    <div class="header">
+      <h1>Task Manager</h1>
+      <button id="themeToggle" class="theme-btn">Dark</button>
+    </div>
 
     <div class="input-area">
       <input type="text" id="taskInput" placeholder="Enter a new task">
       <button id="addButton">Add</button>
     </div>
 
+    <!-- Shows a message if the user tries to add an empty task -->
+    <p id="errorMessage" class="error"></p>
+
+    <!-- Buttons to choose which tasks are shown -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="active">Active</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+
     <ul id="taskList"></ul>
+
+    <!-- Shows when there are no tasks to display -->
+    <p id="emptyMessage" class="empty"></p>
+
+    <!-- Counter on the left, "clear completed" button on the right -->
+    <div class="footer">
+      <span id="counter" class="counter"></span>
+      <button id="clearCompleted" class="clear-btn hidden">Clear completed</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
